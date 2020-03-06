@@ -18,12 +18,16 @@ const SEO = ({ description, lang, meta, title }) => {
           siteMetadata {
             title
             description
-            social { twitter }
+            social {         
+              twitter
+              facebook
+            }
           }
         }
       }
     `
   )
+
 
   const metaDescription = description || site.siteMetadata.description
 
